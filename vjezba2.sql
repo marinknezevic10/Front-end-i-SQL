@@ -13,8 +13,10 @@ create table voznja(
 sifra int not null primary key auto_increment,
 brojvozila int not null,
 cijena decimal (6,2),
-trajanje int
+putnik int
 );
+
+alter table voznja add foreign key (putnik) references putnik (sifra);
 
 describe putnik;
 insert into putnik(sifra,pocetnaadresa,krajnjaadresa,brojtelefona)
@@ -25,8 +27,9 @@ select * from putnik;
 
 describe voznja;
 
-insert into voznja(sifra,brojvozila,cijena,trajanje)
-		values (null,4,40,8),
-				(null,5,20,6),
-				(null,13,99.99,45);
+insert into voznja(sifra,brojvozila,cijena,putnik)
+		values (null,4,40,null),
+				(null,5,20,null),
+				(null,13,99.99,null),
+				(null,10,52.75,null);
 select * from voznja;
