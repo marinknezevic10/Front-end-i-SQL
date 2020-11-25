@@ -18,10 +18,7 @@ zupan varchar(70)
 alter table opcina add foreign key(zupanija) references zupanija(sifra);
 
 insert into opcina(sifra,naziv)
-values(null,'Qwer'),(null,'Qwert'),(null,'Qwertz');
-
-insert into opcina(sifra,naziv)
-values(null,'Asdf'),(null,'Asdfg'),(null,'Asdfgh');
+values(null,'Qwer'),(null,'Qwert'),(null,'Qwertz'),(null,'Asdf'),(null,'Asdfg'),(null,'Asdfgh');
 select * from opcina;
 
 insert into zupanija(sifra,naziv,zupan) 
