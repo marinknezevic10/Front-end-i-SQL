@@ -14,18 +14,19 @@ naziv varchar(70) not null,
 zupan varchar(70)
 );
 
-
 alter table opcina add foreign key(zupanija) references zupanija(sifra);
-
-insert into opcina(sifra,naziv)
-values(null,'Qwer'),(null,'Qwert'),(null,'Qwertz'),(null,'Asdf'),(null,'Asdfg'),(null,'Asdfgh');
-select * from opcina;
 
 insert into zupanija(sifra,naziv,zupan) 
 values(null,'Naziv','Pero'),
 	(null,'Zivna','Rope'),
 	(null,'Aha','Da');
 select * from zupanija;
+
+insert into opcina(sifra,naziv)
+values(null,'Qwer'),(null,'Qwert'),(null,'Qwertz'),(null,'Asdf'),(null,'Asdfg'),(null,'Asdfgh');
+select * from opcina;
+
+
 
 
 
