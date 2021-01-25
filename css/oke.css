@@ -1,0 +1,58 @@
+.izbornik{
+    background-color: rgb(13, 0, 88);
+    overflow: hidden;
+    padding-top: 3px;
+  }
+  .izbornik a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .izbornik a:hover {
+    color: rgb(2, 7, 255);
+  }
+
+  .text{
+    float: right;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+   }
+  footer{
+     text-align: center;
+   }
+   main{
+     min-height: calc(100vh - 56px - 128px);
+   }
+   span{
+     padding:20px;
+   }
+   .login{
+    font-family: Arial;
+}
+input[type=text], input[type=password]{
+    width:50%;
+   margin:8px 0;
+   display:inline block;
+   border:1px solid #ccc;
+   box-sizing:border-box;
+}
+.prijava{
+    background-color: rgb(13, 0, 88);
+    color:white;
+    padding:14px 20px;
+    margin:11px 0;
+    border:none;
+    cursor:pointer;
+}
+.prijava:hover{
+    color: #3399ff;
+}
+.prijavise{
+  padding:3.5px;
+}
+  
