@@ -1,4 +1,0 @@
-<?php
-
-$naslov='Nogomet - Novosti';
-?>
